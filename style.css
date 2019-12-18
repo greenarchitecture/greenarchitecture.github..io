@@ -692,7 +692,6 @@ button:focus {
 	display: inline;
 	float: left;
 	margin-top: 50px;
-	margin-bottom: 5em;
 	width: 100%;
 }
 
@@ -1499,9 +1498,21 @@ button:focus {
 
 /* fluid 5 columns */
 .grid-sizer,
-.grid-item { width: 30%; }
+.grid-item { width: 31%; }
 /* 2 columns wide */
 .grid-item--width2 { width: 40%; }
 .grid-item {
   margin-bottom: 10px;
+}
+.filter-active {
+	background: #04d438;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(5, 187, 178), #04d438);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(5, 187, 178), #04d438); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.filter-button-group {
+	padding-right: 2em;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	gap: 5px;
 }
